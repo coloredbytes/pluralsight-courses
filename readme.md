@@ -1,4 +1,4 @@
-<h1> <p align="center">Python Course</p> </h1>
+<h1> <p align="center">Pluralsight Courses</p> </h1>
 
 # Why is this here?
 
