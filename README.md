@@ -20,12 +20,7 @@ My Job has given me a [Pluralsight](https://www.pluralsight.com/) license to kee
 ## Contributors
 
 
-<<<<<<< HEAD:readme.md
 | [![ColoredBytes](https://github.com/JershOps.png?size=100)](https://github.com/ColoredBytes) |
 | ---------------------------------------------------------------------------------------- |
 | [JershOps](https://github.com/JershOps)                                               |
-=======
-| [![JershOps](https://github.com/JershOps.png?size=100)](https://github.com/JershOps) |
-| ---------------------------------------------------------------------------------------- |
-| [ColoredBytes](https://github.com/JershOps)                                               |
->>>>>>> 8a37a14 (Finishing up Module 3):README.md
+
