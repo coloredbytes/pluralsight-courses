@@ -1,4 +1,11 @@
-<h1> <p align="center">Pluralsight Courses</p> </h1>
+<p align="center">
+  <img src=".resources/pluralsight.svg" alt="Header" width="100" height="100"><br>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  </a>
+</p>
+
+<b><p align="center"> Repo for my Pluralsight Courses.</p></b>
 
 # What is this?
 
@@ -7,13 +14,18 @@ My Job has given me a [Pluralsight](https://www.pluralsight.com/) license to kee
 
 # :link: Table of Contents
 - [Python](./python-fundamentals/) -- Coursework for Python 3 Fundamentals
-
-
+- [Ansible](./ansible-fundamentals/) -- Coursework for Ansible Fundamentals
 
 
 ## Contributors
 
 
+<<<<<<< HEAD:readme.md
 | [![ColoredBytes](https://github.com/JershOps.png?size=100)](https://github.com/ColoredBytes) |
 | ---------------------------------------------------------------------------------------- |
 | [JershOps](https://github.com/JershOps)                                               |
+=======
+| [![JershOps](https://github.com/JershOps.png?size=100)](https://github.com/JershOps) |
+| ---------------------------------------------------------------------------------------- |
+| [ColoredBytes](https://github.com/JershOps)                                               |
+>>>>>>> 8a37a14 (Finishing up Module 3):README.md
