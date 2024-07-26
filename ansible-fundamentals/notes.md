@@ -9,6 +9,7 @@
   + [Installing Ansible](#%69%6E%73%74%61%6C%6C%69%6E%67%2D%61%6E%73%69%62%6C%65)
   + [Two Distributions](#%74%77%6F%2D%64%69%73%74%72%69%62%75%74%69%6F%6E%73)
   + [Ansible Project Structure.](#%61%6E%73%69%62%6C%65%2D%70%72%6F%6A%65%63%74%2D%73%74%72%75%63%74%75%72%65%2E)
+  + [Demo: Installing Ansible using `pip`](#%64%65%6D%6F%3A%2D%69%6E%73%74%61%6C%6C%69%6E%67%2D%61%6E%73%69%62%6C%65%2D%75%73%69%6E%67%2D%60%70%69%70%60)
 
 
 ## Introduction to Ansible
@@ -74,19 +75,77 @@ source hacking/env-setup
 ### Two Distributions
 
 - `ansible-core`: Just the essentials: command-line tools and essential modules.
--  `ansible`: "`Batteries included`" and provides a collection of modules, plugins and roles.
+-  `ansible`: "**Batteries included**" and provides a collection of modules, plugins and roles.
 
 > [!NOTE]
-> Installation method depends on your Linux distribution. 
+> Installation method depends on your Linux distribution.
 > - Windows control nodes require WSL.
 > - **Think in terms of python!**
 
 ### Ansible Project Structure.
 
- 
+<details>
+<summary> Click Here </summary>
 
+```
+ansible-project/
+├── ansible.cfg
+├── inventory/
+│   ├── development
+│   └── production
+├── playbooks/
+│   ├── webservers.yml
+│   └── dbservers.yml
+├── roles/
+│   ├── common/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── handlers/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   ├── files/
+│   │   ├── vars/
+│   │   │   └── main.yml
+│   │   ├── defaults/
+│   │   │   └── main.yml
+│   │   ├── meta/
+│   │   │   └── main.yml
+│   ├── webserver/
+│   │   ├── tasks/
+│   │   │   └── main.yml
+│   │   ├── handlers/
+│   │   │   └── main.yml
+│   │   ├── templates/
+│   │   │   └── httpd.conf.j2
+│   │   ├── files/
+│   │   ├── vars/
+│   │   │   └── main.yml
+│   │   ├── defaults/
+│   │   │   └── main.yml
+│   │   ├── meta/
+│   │   │   └── main.yml
+└── group_vars/
+    ├── all.yml
+    └── webservers.yml
+```
+</details>
 
+### Demo: Installing Ansible using `pip`
 
+```bash
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py --user
+```
+- Add this to your `.bashrc`
 
+```bash
+export PATH=$PATH:$HOME/.local/bin
+exec bash
+```
+- Installing ansible with pip
+
+```bash
+python3 -m pip install --user ansible
+```
 
 
