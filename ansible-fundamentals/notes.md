@@ -10,6 +10,10 @@
   + [Two Distributions](#%74%77%6F%2D%64%69%73%74%72%69%62%75%74%69%6F%6E%73)
   + [Ansible Project Structure.](#%61%6E%73%69%62%6C%65%2D%70%72%6F%6A%65%63%74%2D%73%74%72%75%63%74%75%72%65%2E)
   + [Demo: Installing Ansible using `pip`](#%64%65%6D%6F%3A%2D%69%6E%73%74%61%6C%6C%69%6E%67%2D%61%6E%73%69%62%6C%65%2D%75%73%69%6E%67%2D%60%70%69%70%60)
++ [Ansible Playbooks and Modules](#%61%6E%73%69%62%6C%65%2D%70%6C%61%79%62%6F%6F%6B%73%2D%61%6E%64%2D%6D%6F%64%75%6C%65%73)
+  + [Ansible Playbooks](#%61%6E%73%69%62%6C%65%2D%70%6C%61%79%62%6F%6F%6B%73)
+  + [Ansible PLugin Example Use Case](#%61%6E%73%69%62%6C%65%2D%70%6C%75%67%69%6E%2D%65%78%61%6D%70%6C%65%2D%75%73%65%2D%63%61%73%65)
+  + [Anisble  Collections vs Roles](#%61%6E%69%73%62%6C%65%2D%2D%63%6F%6C%6C%65%63%74%69%6F%6E%73%2D%76%73%2D%72%6F%6C%65%73)
 
 
 ## Introduction to Ansible
@@ -142,10 +146,36 @@ python3 get-pip.py --user
 export PATH=$PATH:$HOME/.local/bin
 exec bash
 ```
-- Installing ansible with pip
+- Installing Ansible with pip
 
 ```bash
 python3 -m pip install --user ansible
 ```
 
+## Ansible Playbooks and Modules
+
+### Ansible Playbooks
+
+> [!NOTE]
+> Playbooks can consist of one or multiple tasks.
+
+- `Modules`
+  - Units of code that control system resources of executing system commands on local and remote nodes.
+
+- `Plugins`
+  -  Units of code that extend Ansible Core functionality
+
+### Ansible PLugin Example Use Case
+
+```bash
+# prereq
+export VAUlT_ADDR='https://your.vault-server.com'
+export VAULT_TOKEN='your.vault.token'
+```
+
+### Anisble  Collections vs Roles
+
+**Ansible Galaxy**
+
+Is a repo for sharing and discovering Ansible content.
 
