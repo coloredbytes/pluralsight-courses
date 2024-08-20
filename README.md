@@ -19,8 +19,6 @@ My Job has given me a [Pluralsight](https://www.pluralsight.com/) license to kee
 
 ## Contributors
 
-
-| [![ColoredBytes](https://github.com/JershOps.png?size=100)](https://github.com/ColoredBytes) |
-| ---------------------------------------------------------------------------------------- |
-| [JershOps](https://github.com/JershOps)                                               |
-
+<a href="https://github.com/coloredbytes/media-stacker/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=coloredbytes/pluralsight-courses" />
+</a>
