@@ -19,6 +19,31 @@
 
 ## Module 3: Deploying your first Terraform configuration.
 
+**The Terraform Commands**
+
+- `terraform init` - Initializes to terraform configs by looking in the current directory for terraform config files.
+- `terraform plan` - Saves the current configs to a file to deploy later if needed.
+- `terraform apply` - applies the current config to put them into motion.
+- `terraform destroy` - Destroys the current terraform config. This does not delete the files just what was deployed.
+
+**Example of Terraform Provider Config**:
+
+```tf
+
+terraform {
+  required_providers {
+    github = {
+      source  = "integrations/github"
+      version = "~> 6.0"
+    }
+  }
+}
+
+# Configure the GitHub Provider
+provider "github" {
+      token = var.GITHUB_TOKEN # or `GITHUB_TOKEN`
+}
+```
 
 
 

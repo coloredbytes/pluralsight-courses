@@ -15,6 +15,8 @@ My Job has given me a [Pluralsight](https://www.pluralsight.com/) license to kee
 # :link: Table of Contents
 - [Python](./python-fundamentals/) -- Coursework for Python 3 Fundamentals
 - [Ansible](./ansible-fundamentals/) -- Coursework for Ansible Fundamentals
+- [Terraform](./terraform/) --  Coursework for Teraform Fundamentals
+- [GoLang](./golang/) -- Coursework for GoLang Fundamentals
 
 
 ## Contributors
